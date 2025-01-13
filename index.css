@@ -1,0 +1,67 @@
+.section{
+    background-color: #1A0606;
+    color: #F2E7D3;
+     font-family: "PT Serif Caption", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+ 
+}
+
+.head{
+     font-size: 80px;
+     text-align:center;
+     letter-spacing: 5px;
+     margin-bottom: 200px;
+}
+.mainText{
+  text-decoration: none;
+    font-size: 40px;
+     margin: 30px;
+    color: #F2E7D3;
+    
+}
+
+.mainDiv{
+ display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+
+.underline{
+  border-bottom: 2px solid #ccc; 
+margin-bottom: 20px; 
+padding-bottom: 10px; 
+}
+
+.menHead{
+    
+     font-size: 35px;
+     text-align:center;
+     letter-spacing: 5px;
+     margin-bottom: 100px;
+     
+}
+
+.manList{
+    list-style: none;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.manSectionTable{
+display: flex;
+/* text-align:left; */
+margin: 10px;
+/* width: 290px; */
+}
+
+.manUl{
+    margin: 20px;
+    padding: 10px;
+}
+
+.span{
+    color: #DA730D;
+}
+
