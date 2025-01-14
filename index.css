@@ -66,7 +66,7 @@ img {
  
 
 .head{
-     font-size: 75px;
+     font-size: 70px;
      text-align:center;
      letter-spacing: 5px;
      margin-bottom: 40px;
@@ -75,7 +75,7 @@ img {
 .mainText{
  
   text-decoration: none;
-    font-size: 27px;
+    font-size: 24px;
      margin-top: 30px;
      margin-bottom: 30px;
     color: var(--primary-text-color);
@@ -134,14 +134,14 @@ margin: 10px;
 .image{
   width: 218px;
   height: 202px;
-  margin-top: -30px;
+  margin-top: -20px;
   margin-left: 276px;
   margin-right: -50px;
 }
 .image2{
   width: 218px;
   height: 202px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: -42px;
   /* margin-right: -50px; */
 }
