@@ -1,37 +1,89 @@
-.section{
-    background-color: #1A0606;
-    color: #F2E7D3;
+:root{
+    --accent-color: #DA730D;
+    --primary-text-color: #F2E7D3;
+      --background-color:#1A0606;
     
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 380px;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: "PT Serif Caption", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--primary-text-color);
+}
+/* скидаємо всі браузерні стилі  */
+h1,
+h2,
+h3,
+p,
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+   
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
+/* .section{
+   width: 380px; */
+    /* background-color: var(--background-color); */
+    /* color: var(--primary-text-color); */
+   
   
  
-}
+/* } */
 
 .head{
      font-size: 80px;
      text-align:center;
      letter-spacing: 5px;
-     margin-bottom: 200px;
-      font-family: "PT Serif Caption", serif;
-  font-weight: 400;
-  font-style: normal;
+     margin-bottom: 100px;
+      
 }
 .mainText{
-  font-family: "Lato", serif;
-  font-weight: 400;
-  font-style: normal;
+ 
   text-decoration: none;
     font-size: 20px;
      margin: 30px;
-    color: #F2E7D3;
-   
+    color: var(--primary-text-color);
+   font-family: "lato", sans-serif;
+font-weight: 400;
+font-style: normal;
  
 }
 
 
 .mainDiv{
- display: flex;
+      display: flex;
      flex-direction: column;
      text-align: center;
+     justify-content: center;
+     
 }
 
 .underline{
@@ -68,6 +120,34 @@ margin: 10px;
 }
 
 .span{
-    color: #DA730D;
+    color: var(--accent-color);
+}
+
+.image{
+  width: 218px;
+  height: 202px;
+  margin-top: -100px;
+  margin-left: 276px;
+  margin-right: -50px;
+}
+.image2{
+  width: 218px;
+  height: 202px;
+  margin-top: 100px;
+  margin-left: -42px;
+  /* margin-right: -50px; */
+}
+
+.svg{
+ margin: auto;
+}
+
+.womenLi{
+  font-size: 16px;
+  margin: 15px;
+  list-style: none;
+  text-decoration: none;
+   color: var(--primary-text-color);
+   
 }
 
