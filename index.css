@@ -49,17 +49,18 @@ img {
 
 
 
-/* .section{
+.section{
    
      display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center; 
     min-height: 100vh; 
-    /* Секція займає весь екран */
-     /* padding: 20px; 
+     /* Секція займає весь екран  */
+     padding: 20px; 
      box-sizing: border-box; 
-    position: relative; */
+    position: relative; 
+}
   
  
  
@@ -132,7 +133,7 @@ margin: 10px;
 .image{
   width: 218px;
   height: 202px;
-  margin-top: -300px;
+  margin-top: -100px;
   margin-left: 276px;
   margin-right: -50px;
 }
@@ -158,13 +159,14 @@ margin: 10px;
 }
 
 .section {
-    /* position: fixed;  */
-    /* Секція зафіксована */
-    /* top: 0;
-    left: 0; */
-    /* width: 100%;
-    height: 100%; */
-    /* overflow-y: auto; Вертикальний скролл тільки якщо потрібно */
+    position: fixed;  
+     /* Секція зафіксована  */
+   top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+     overflow-y: auto; 
+     /* Вертикальний скролл тільки якщо потрібно */
 }
 
 @media screen and (max-width: 500px) {
