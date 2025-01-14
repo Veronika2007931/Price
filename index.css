@@ -97,7 +97,7 @@ font-style: normal;
 }
 
 .underline{
-  border-bottom: 2px solid #ccc; 
+  border-bottom: 0.5px solid #ccc; 
 margin-bottom: 20px; 
 padding-bottom: 10px; 
 }
@@ -152,16 +152,29 @@ margin: 10px;
  margin: auto;
 }
 
-.womenLi{
+.womenA{
+
+  width: 200px;
   font-size: 17px;
-  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   list-style: none;
   text-decoration: none;
    color: var(--primary-text-color);
-   display: flex;
+    display: flex;
    align-items: center;
    justify-content: center;
    
+}
+
+.womenLi{
+  
+ color: #DA730D;
+
+
+ 
 }
 
 .section {
@@ -173,6 +186,18 @@ margin: 10px;
     height: 100%; 
      overflow-y: auto; 
      /* Вертикальний скролл тільки якщо потрібно */
+}
+
+.ul{
+  /* list-style-type: disc; */
+  /* list-style-position: outside; */
+  /* list-style-position: inside;  */
+    padding-left: 0; /* Забирає відступ ліворуч */
+  margin-left: 0; /* При необхідності */
+   /* display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center; */
 }
 
 /* @media screen and (max-width: 500px) {
