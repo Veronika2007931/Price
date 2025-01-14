@@ -66,7 +66,7 @@ img {
  
 
 .head{
-     font-size: 80px;
+     font-size: 75px;
      text-align:center;
      letter-spacing: 5px;
      margin-bottom: 40px;
@@ -75,13 +75,13 @@ img {
 .mainText{
  
   text-decoration: none;
-    font-size: 20px;
+    font-size: 27px;
      margin: 30px;
     color: var(--primary-text-color);
    font-family: "lato", sans-serif;
 font-weight: 400;
 font-style: normal;
- 
+ letter-spacing: 1px;
 }
 
 
@@ -133,7 +133,7 @@ margin: 10px;
 .image{
   width: 218px;
   height: 202px;
-  margin-top: -60px;
+  margin-top: -50px;
   margin-left: 276px;
   margin-right: -50px;
 }
@@ -150,11 +150,14 @@ margin: 10px;
 }
 
 .womenLi{
-  font-size: 16px;
-  margin: 15px;
+  font-size: 17px;
+  margin: 10px;
   list-style: none;
   text-decoration: none;
    color: var(--primary-text-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
    
 }
 
