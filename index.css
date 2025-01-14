@@ -49,19 +49,20 @@ img {
 
 
 
-.section{
+/* .section{
    
-     display: flex;
+     display: flex; 
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* min-height: 100vh; Секція займає весь екран */
-    padding: 20px;
-    /* box-sizing: border-box; */
-    /* position: relative; */
+    justify-content: center; 
+    min-height: 100vh; 
+    /* Секція займає весь екран */
+     /* padding: 20px; 
+     box-sizing: border-box; 
+    position: relative; */
   
  
-}
+ 
 
 .head{
      font-size: 80px;
