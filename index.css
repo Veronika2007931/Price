@@ -1,26 +1,32 @@
 .section{
     background-color: #1A0606;
     color: #F2E7D3;
-     font-family: "PT Serif Caption", serif;
-  font-weight: 400;
-  font-style: normal;
+    
   
  
 }
 
 .head{
-     font-size: 64px;
+     font-size: 80px;
      text-align:center;
      letter-spacing: 5px;
      margin-bottom: 200px;
+      font-family: "PT Serif Caption", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .mainText{
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
   text-decoration: none;
-    font-size: 40px;
+    font-size: 20px;
      margin: 30px;
     color: #F2E7D3;
-    
+   
+ 
 }
+
 
 .mainDiv{
  display: flex;
