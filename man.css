@@ -29,7 +29,8 @@ display: flex;
 /* text-align:left; */
 margin-top: 10px;
 margin-bottom: 10px;
-margin-right: 20px;
+margin-right: 10px;
+margin-left: 10px;
 /* width: 290px; */
 }
 
@@ -43,5 +44,5 @@ margin-right: 20px;
 }
 
 .sircle{
-    margin-left:240px;
+    margin-left:250px;
 }
