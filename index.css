@@ -1,7 +1,7 @@
 :root{
     --accent-color: #DA730D;
     --primary-text-color: #F2E7D3;
-      --background-color:#1A0606;
+      --background-color:#140404;
     
 }
 
@@ -14,7 +14,7 @@ body {
   font-family: "lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  width: 380px;
+  width: 380px; 
   color: var(--primary-text-color);
   background-color: var(--background-color);
 }
