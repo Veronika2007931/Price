@@ -1,0 +1,47 @@
+:root{
+    --accent-color: #DA730D;
+    --primary-text-color: #F2E7D3;
+      --background-color:#1A0606;
+    
+}
+
+
+
+  
+
+.menHead{
+    
+     font-size: 35px;
+     text-align:center;
+     letter-spacing: 5px;
+     margin-bottom: 30px;
+     
+}
+
+.manList{
+    list-style: none;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.manSectionTable{
+display: flex;
+/* text-align:left; */
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 20px;
+/* width: 290px; */
+}
+
+.manUl{
+    margin: 20px;
+    padding: 10px;
+}
+
+.priceSpan{
+    font-weight: 700;
+}
+
+.sircle{
+    margin-left:240px;
+}

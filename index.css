@@ -102,32 +102,7 @@ margin-bottom: 20px;
 padding-bottom: 10px; 
 }
 
-.menHead{
-    
-     font-size: 35px;
-     text-align:center;
-     letter-spacing: 5px;
-     margin-bottom: 100px;
-     
-}
 
-.manList{
-    list-style: none;
-    line-height: 40px;
-    font-size: 20px;
-}
-
-.manSectionTable{
-display: flex;
-/* text-align:left; */
-margin: 10px;
-/* width: 290px; */
-}
-
-.manUl{
-    margin: 20px;
-    padding: 10px;
-}
 
 .span{
     color: var(--accent-color);
