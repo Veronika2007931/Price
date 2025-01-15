@@ -56,10 +56,12 @@
 }
 
 .sircle{
-    margin-left:200px;
+    margin-left:270px;
+    margin-top: -120px;
 }
 .twoSircle{
-    height: 150px;
-    width: 170px;
+    height: 160px;
+    width: 180px;
+margin-bottom: -100px;
     margin-left: -200px;
 }

@@ -51,5 +51,11 @@ margin-left: 10px;
 }
 
 .sircle{
-    margin-left:270px;
+    margin-left:250px;
+    margin-top: -170px;
+}
+
+.twoSircle{
+    margin-left: -130px;
+    margin-bottom: -170px;
 }
