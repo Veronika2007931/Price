@@ -26,17 +26,24 @@
 
 .manSectionTable{
 display: flex;
-/* text-align:left; */
+text-align:left;
+justify-content: center;
 margin-top: 10px;
 margin-bottom: 10px;
 margin-right: 10px;
-margin-left: 10px;
+margin-left: 20px;
 /* width: 290px; */
 }
 
 .manUl{
-    margin: 20px;
-    padding: 10px;
+  
+    margin-right: 40px;
+    /* padding: 10px; */
+}
+.manUl2{
+    margin-left: 40px;
+   
+    /* padding: 10px; */
 }
 
 .priceSpan{
@@ -44,5 +51,5 @@ margin-left: 10px;
 }
 
 .sircle{
-    margin-left:250px;
+    margin-left:270px;
 }
