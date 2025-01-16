@@ -6,7 +6,7 @@
 }
 
 .text2{
-    width: 198px;
+    width: 200px;
     height: 45px;
 }
 
@@ -34,6 +34,8 @@
 }
 
 .fatprice{
+    text-decoration: none;
+    color: #BFBBB2;
     font-weight: 600;
 }
 
