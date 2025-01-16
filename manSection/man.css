@@ -14,7 +14,7 @@
      font-size: 35px;
      text-align:center;
      letter-spacing: 5px;
-     margin-bottom: 50px;
+     margin-bottom: 60px;
      
 }
 
@@ -28,8 +28,8 @@
 display: flex; 
 text-align:left;
 justify-content: center;
-margin-top: 10px;
-margin-bottom: 10px;
+margin-top: 20px;
+margin-bottom: 40px;
 margin-right: 10px;
 margin-left: 10px;
 /* width: 290px; */
@@ -51,13 +51,14 @@ margin-left: 10px;
 }
 
 .sircle{
-    margin-left:250px;
-    margin-top: -170px;
+    margin-left:200px;
+    margin-top: -100px;
 }
 
 .twoSircle{
-    margin-left: -90px;
+    margin-left: -50px;
     margin-bottom: -70px;
+    margin-top: 100px;
     width: 200px;
     height: 200px;
 }
