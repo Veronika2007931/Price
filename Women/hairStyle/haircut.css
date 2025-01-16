@@ -6,8 +6,17 @@
 }
 
 .text2{
-    width: 194px;
+    width: 198px;
     height: 45px;
+}
+
+.text3{
+    width: 198px;
+    height: 30px;
+}
+
+.mainName2{
+    font-size: 14px;
 }
 
 .size2{
@@ -21,6 +30,7 @@
 
 .price2{
    font-size: 14px;
+   
 }
 
 .fatprice{
@@ -33,10 +43,17 @@
 }
 
 .liColorHair{
+    /* height: 52px; */
     margin-left: 10px;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .line{
     color: #d49708;
+}
+
+.secondText2{
+     font-size: 10px;
+     margin-top: 2px;
+     color:  #BFBBB2;
 }
