@@ -8,17 +8,19 @@
 .liColorHair {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%; /* На всю доступну ширину */
-    padding: 12px 0;
-    border-bottom: 0.5px solid rgba(218, 115, 13, 0.3); /* Тонка лінія */
+    align-items: flex-start; /* Вирівнюємо по верхньому краю тексту */
+    width: 100%; 
+    padding: 15px 0;
+    border-bottom: 0.5px solid rgba(218, 115, 13, 0.3);
 }
 
-.hairsection{
-     display: flex;
+.hairsection {
+    display: flex;
     flex-direction: column;
+    align-items: center; /* Центруємо весь блок на сторінці */
     width: 100%;
-    max-width: 450px
+    max-width: 450px;
+    margin: 0 auto;
 }
 /* .section2{
      display: flex; 
@@ -82,7 +84,7 @@
    font-weight: 600;
 } */
 
-.sircle {
+/* .sircle {
     position: absolute;
     right: -20px;
     top: 10%;
@@ -93,4 +95,15 @@
     width: 180px;
 margin-bottom: -100px;
     margin-left: -200px;
+} */
+.sircle, .twoSircle {
+    position: absolute;
+    z-index: -1;
+    pointer-events: none; /* Щоб круги не заважали клікати по тексту */
+}
+
+.twoSircle {
+    bottom: -50px;
+    left: -100px;
+    margin: 0; /* Прибираємо старі марджини */
 }

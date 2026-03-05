@@ -9,7 +9,7 @@
 
   
 
-menHead {
+.menHead {
     font-family: "PT Serif Caption", serif; /* Твій основний шрифт заголовків */
     font-size: 30px; /* Трохи зменшимо для кращого балансу на мобільних */
     text-align: center;
