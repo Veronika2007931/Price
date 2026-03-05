@@ -1,84 +1,106 @@
-
-
-:root{
-    --accent-color: #DA730D;
-    --primary-text-color: #F2E7D3;
-      --background-color:#1A0606;
-    
-}
-
-
-/* .hairstyleSection{
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} */
-
 .hairsection {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центруємо весь блок на сторінці */
+    align-items: center;
     width: 100%;
-    max-width: 450px;
+    max-width: 480px;
     margin: 0 auto;
-}
-
-.text, .text2, .text3, .text4 {
-    width: auto; 
-    height: auto;
-    flex: 1;
-    padding-right: 10px;
-}
-
-.mainName2 {
-    font-size: 15px;
-    line-height: 1.4;
-    display: block; 
-}
-
-.size2{
-    width: 40px;
-   font-size: 10px;
-    color: #BFBBB2;
-    line-height: 1.7;
-    margin-right: 10px;
-    /* margin-top: 7px; */
-}
-
-.price2{
-   text-align: right;
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.fatprice{
-    text-decoration: none;
-    color: #BFBBB2;
-    font-weight: 600;
+    padding: 20px;
 }
 
 .head3 {
-    font-size: 24px; 
-    line-height: 1.3;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
+    font-size: 24px;
     text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: var(--primary-text-color);
 }
 
-.liColorHair{
-    
+.hair-list {
     width: 100%;
-    padding: 0 15px;
+    padding: 0;
+    list-style: none;
 }
 
-.line{
-    color: #d49708;
+.liColorHair {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 0.5px solid rgba(218, 115, 13, 0.3);
+    gap: 10px;
 }
 
-.secondText2 {
+.liColorHair.no-border {
+    border-bottom: none;
+}
+
+.info-block {
+    flex: 1;
+}
+
+.mainName {
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--primary-text-color);
+}
+
+.span {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.secondText {
     font-size: 11px;
-    line-height: 1.6; 
-    margin-top: 5px;
     color: #BFBBB2;
+    margin-top: 4px;
+}
+
+/* Блок цін */
+.price-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 140px; /* Фіксована ширина правої колонки */
+}
+
+/* Спеціальний відступ для одиночних цін, щоб вони були внизу відносно назви, як на макеті */
+.single-price {
+    justify-content: flex-end;
+    align-self: stretch;
+    padding-bottom: 5px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Якщо ціна одна, вона притискається вправо */
+.single-price .price-row {
+    justify-content: flex-end;
+}
+
+.size-label {
+    font-size: 11px;
+    color: #BFBBB2;
+}
+
+.price-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-text-color);
+    white-space: nowrap;
+}
+
+
+
+/* Пунктирна лінія */
+.separator-line {
+    border: none;
+    border-top: 1px dashed var(--accent-color);
+    opacity: 0.5;
+    margin: 10px 0;
+    width: 100%;
 }

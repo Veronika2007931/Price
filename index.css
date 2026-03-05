@@ -1,211 +1,142 @@
-:root{
+:root {
     --accent-color: #DA730D;
     --primary-text-color: #F2E7D3;
-      --background-color:#140404;
-    
+    --background-color: #140404;
 }
 
-*,
-*::before,
-*::after{
+*, *::before, *::after {
     box-sizing: border-box;
 }
+
 body {
-  font-family: "lato", sans-serif;
-  min-height: 100vh;
-  width: 100%; 
-  margin: 0 auto;
-  max-width: 500px; 
-  color: var(--primary-text-color);
-  background-color: var(--background-color);
-  overflow-x: hidden; 
-}
-
-h1, h2, h3, h4, h5, h6 {
- font-family: "PT Serif Caption", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--primary-text-color);
-}
-/* скидаємо всі браузерні стилі  */
-h1,
-h2,
-h3,
-p,
-ul{
+    font-family: "lato", sans-serif;
+    margin: 0;
     padding: 0;
-    margin:  0;
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
-ul{
-   
-    list-style: none;
+h1, h2, h3 {
+    font-family: "PT Serif Caption", serif;
+    font-weight: 400;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-
-
-
+/* Основна секція */
 .section {
-/* 1. Центрування та розміри */
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.price-container {
     width: 100%;
-    
-    /* 2. Внутрішні відступи (щоб текст не торкався країв iPhone) */
-    padding: 40px 20px;
-    box-sizing: border-box;
-
-    /* 3. Позиціонування для декору */
-    position: relative; /* База для .decor-shape */
-    
-    /* 4. Контроль скролу */
-    overflow-x: hidden; /* Ховаємо горизонтальну прокрутку від фігур */
-    overflow-y: auto;   /* Дозволяємо вертикальний скрол контенту */
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
 }
-  
- 
- 
 
-.head{
-     font-size: 60px;
-     line-height: 1.1;
-     text-align:center;
-     letter-spacing: 2px;
-     margin-bottom: 70px;
-      
+.head {
+    font-size: clamp(40px, 10vw, 60px); /* Адаптивний розмір */
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
 }
-.mainText{
- 
-  text-decoration: none;
-    font-size: 24px;
-        margin-top: 30px;
-     margin-bottom: 30px;
-     margin-right: 25px;
-     margin-left: 10px;
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainText {
+    text-decoration: none;
+    font-size: 22px;
     color: var(--primary-text-color);
-   font-family: "lato", sans-serif;
-font-weight: 400;
-font-style: normal;
- letter-spacing: 1px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    display: block;
+    text-align: center;
 }
 
-
-.mainDiv{
-      display: flex;
-     flex-direction: column;
-     text-align: center;
-     justify-content: center;
-     
+.underline {
+    border-bottom: 1.5px solid var(--accent-color);
+    padding-bottom: 5px;
 }
 
-.underline{
-  border-bottom: 1px solid #ccc; 
-margin-bottom: 20px; 
-padding-bottom: 10px; 
+/* Список жіночих послуг */
+.women-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
+.svg-arrow {
+    margin-bottom: 20px;
+}
 
+.women-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 
-.span{
+.womenLi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 0;
     color: var(--accent-color);
-    /* height: 5px; */
-    margin: 3px;
 }
 
+.dot {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.womenLink {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: left;
+    max-width: 250px; /* Обмежуємо ширину для красивого переносу */
+}
+
+/* Декоративні елементи */
 .decor-shape {
     position: absolute;
-    width: 218px;
-    height: 202px;
+    width: 200px;
+    height: auto;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.4;
+    pointer-events: none;
 }
-
 
 .shape-top-right {
-    top: -20px;
-    right: -50px;
+    top: -30px;
+    right: -60px;
 }
-
 
 .shape-bottom-left {
-    bottom: -20px;
-    left: -50px;
-    transform: rotate(180deg); 
+    bottom: -30px;
+    left: -60px;
+    transform: rotate(180deg);
 }
 
-.svg{
- margin: auto;
+/* Адаптивність для дуже малих екранів */
+@media (max-width: 380px) {
+    .head { font-size: 36px; }
+    .mainText { font-size: 18px; }
+    .womenLink { font-size: 16px; }
 }
-
-.womenA{
-
-  width: 190px;
-  font-size: 17px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  /* margin-left: 10px; */
-  margin-right: 10px;
-  list-style: none;
-  text-decoration: none;
-   color: var(--primary-text-color);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   
-}
-
-.womenLi{
-  
- color: #DA730D;
- padding: 10px 0;
-
- 
-}
-
-
-
-.ul{
-  /* list-style-type: disc; */
-  /* list-style-position: outside; */
-  /* list-style-position: inside;  */
-    padding-left: 0; /* Забирає відступ ліворуч */
-  margin-left: 0; /* При необхідності */
-   /* display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center; */
-}
-
-.list{
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  /* margin: 2px; */
-  /* height: px; */
-}
-
-/* @media screen and (max-width: 500px) {
-    .head {
-        font-size: 36px; /* Ще менший розмір для невеликих екранів */
-    /* }
-
-    .mainText {
-        font-size: 16px;
-    }
-
-    .womenLi {
-        font-size: 14px;
-    }
-
-    .womenLi .span {
-        font-size: 18px;
-    } */
-/* }  */
