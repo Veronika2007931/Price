@@ -36,10 +36,13 @@
 .hair-item {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Назва та перша ціна тепер на одному рівні */
+    /* Це вирівнює верхівку назви та верхівку першого рядка ціни в одну лінію */
+    align-items: flex-start; 
     padding: 15px 0;
     border-bottom: 0.5px solid rgba(218, 115, 13, 0.3);
-    gap: 10px;
+}
+.name-block {
+    flex: 1;
 }
 
 .hair-item.no-border {
@@ -52,8 +55,9 @@
 }
 
 .procedure-title {
-    font-size: 15px;
-    line-height: 1.4;
+    font-size: 16px;
+    margin: 0; /* Прибираємо браузерні відступи, щоб текст не "падав" */
+    line-height: 1.2; /* Встановлюємо однаковий line-height для назви та ціни */
     color: var(--primary-text-color);
 }
 
@@ -62,10 +66,11 @@
     margin-left: 4px;
 }
 
+
 .procedure-description {
     font-size: 11px;
     color: #BFBBB2;
-    margin-top: 4px;
+    margin-top: 2px;
     line-height: 1.4;
 }
 
@@ -73,14 +78,15 @@
 .price-details {
     display: flex;
     flex-direction: column;
-    gap: 6px; 
-    min-width: 140px; /* Тримає колонку цін рівною */
+    gap: 8px; /* Відстань між рядками короткое/довге */
+    min-width: 140px;/* Тримає колонку цін рівною */
 }
 
 .price-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline; /* Вирівнює текст ціни по базовій лінії шрифту */
+    line-height: 1.2;
 }
 
 /* Вирівнювання для одиночних цін (без підпису "коротке/довге") */

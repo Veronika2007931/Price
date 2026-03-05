@@ -93,7 +93,7 @@
 .price-value {
     font-size: 14px;
     font-weight: 700;
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     text-align: right;
     white-space: nowrap; /* Заборона переносу ціни */
 }

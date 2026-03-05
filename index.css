@@ -80,19 +80,17 @@ h1, h2, h3 {
 }
 
 .women-list {
-    display: inline-flex; /* Дозволяє списку займати лише стільки місця, скільки треба контенту */
-    flex-direction: column;
-    align-items: flex-start; /* Вирівнює рядки (і крапки) по лівому краю */
+    display: table; /* Список стискається до ширини тексту */
+    margin: 0 auto; /* Центрує цей "стиснутий" список по центру сторінки */
     padding: 0;
-    margin: 20px 0 0 0;
     list-style: none;
+    text-align: left; /* Вирівнює текст і крапки всередині по лівому краю */
 }
 
 .womenLi {
     position: relative;
     padding-left: 25px; /* Місце для крапки */
     margin-bottom: 15px;
-    color: var(--primary-text-color);
 }
 
 /* Створюємо ідеальну крапку через псевдоелемент */
@@ -103,7 +101,7 @@ h1, h2, h3 {
     top: 0;
     color: var(--accent-color);
     font-size: 24px;
-    line-height: 1.2; /* Рівняє крапку по висоті першого рядка тексту */
+    line-height: 1.1;
 }
 
 .womenLink {
@@ -112,8 +110,6 @@ h1, h2, h3 {
     font-size: 18px;
     line-height: 1.3;
     display: block;
-    text-align: left; /* Текст завжди починається зліва після крапки */
-    max-width: 280px; /* Обмежує ширину для гарного переносу */
 }
 
 /* Декоративні елементи */
