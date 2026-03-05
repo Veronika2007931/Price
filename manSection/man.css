@@ -1,69 +1,96 @@
-:root{
-    --accent-color: #DA730D;
-    --primary-text-color: #F2E7D3;
-      --background-color:#1A0606;
-    
-}
-
-
-
-  
-
-.menHead {
-    font-family: "PT Serif Caption", serif; /* Твій основний шрифт заголовків */
-    font-size: 30px; /* Трохи зменшимо для кращого балансу на мобільних */
-    text-align: center;
-    letter-spacing: 5px;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
-
-/* Контейнер таблиці */
-.manSectionTable {
-    display: flex; 
-    justify-content: space-between; /* Рознесемо назву та ціну */
+/* 1. Налаштування контейнера секції */
+.hairsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 400px; /* Обмежимо, щоб на широких екранах не розповзалося */
-    margin: 20px 0 40px 0;
+    max-width: 480px; /* Оптимально для мобільних екранів */
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    box-sizing: border-box;
 }
 
-/* Списки */
-.manList {
+/* 2. Заголовок (Men Head) */
+.menHead {
+    font-family: "PT Serif Caption", serif;
+    font-size: clamp(22px, 7vw, 28px); /* Адаптивний розмір заголовка */
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+/* 3. Список послуг */
+.man-list {
+    width: 100%;
     list-style: none;
-    line-height: 2; /* Даємо більше повітря між рядками */
-    font-size: 18px;
+    padding: 0;
+    margin: 0;
 }
 
-.manUl {
-    flex: 1;
-    padding-right: 20px;
+/* 4. Рядок послуги (Головне виправлення вирівнювання) */
+.man-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Назва та ціна завжди на одній верхній лінії */
+    padding: 18px 0;
+    border-bottom: 0.5px solid rgba(218, 115, 13, 0.3);
+    gap: 15px;
 }
 
-.manUl2 {
-    text-align: right;
-    
+/* Прибираємо лінію у останнього пункту */
+.man-item:last-child {
+    border-bottom: none;
 }
 
-.priceSpan {
+/* 5. Блок назви (Ліва сторона) */
+.info-block {
+    flex: 1; /* Дозволяє тексту назви займати весь вільний простір */
+}
+
+.mainName {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--primary-text-color);
+    margin: 0;
+}
+
+.span {
+    color: var(--accent-color);
+    margin-left: 5px;
+}
+
+/* 6. Блок цін (Права сторона) */
+.price-block {
+    min-width: 120px; /* Фіксована ширина гарантує рівну колонку цін */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Вирівнювання ціни по правому краю */
+.justify-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.price-value {
+    font-size: 15px;
     font-weight: 700;
-    color: #BFBBB2;
+    color: #BFBBB2; /* Колір ціни з твого макета */
+    white-space: nowrap; /* Ціна не переноситься на інший рядок */
 }
 
-/* Декор через абсолютне позиціонування (замість великих марджинів) */
-.sircle {
-    position: absolute;
-    top: 10%;
-    right: -30px;
-    z-index: -1;
-    opacity: 0.6;
-}
-
+/* 7. Декоративні елементи */
 .twoSircle {
     position: absolute;
-    bottom: 5%;
+    bottom: -30px;
     left: -40px;
     z-index: -1;
-    width: 200px;
-    height: 200px;
-    opacity: 0.5;
+    width: 180px;
+    height: auto;
+    opacity: 0.4;
+    pointer-events: none; /* Щоб декор не заважав клікам */
 }

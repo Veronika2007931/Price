@@ -1,74 +1,80 @@
+/* Використовуємо змінні з вашого головного файлу */
+:root {
+    --accent-color: #DA730D;
+    --primary-text-color: #F2E7D3;
+    --background-color: #1A0606;
+    --price-color:#BFBBB2;
+}
+
+/* Контейнер секції */
 .hairsection {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 480px;
+    max-width: 480px; 
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 15px;
 }
 
 .head3 {
     font-size: 24px;
+    line-height: 1.3;
     text-align: center;
-    letter-spacing: 1px;
     margin-bottom: 30px;
     color: var(--primary-text-color);
 }
 
 .hair-list {
     width: 100%;
-    padding: 0;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.liColorHair {
+/* ОСНОВНИЙ БЛОК: Вирівнювання назви та ціни по верхньому краю */
+.hair-item {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start; /* Назва та перша ціна тепер на одному рівні */
     padding: 15px 0;
     border-bottom: 0.5px solid rgba(218, 115, 13, 0.3);
     gap: 10px;
 }
 
-.liColorHair.no-border {
+.hair-item.no-border {
     border-bottom: none;
 }
 
-.info-block {
+/* Ліва частина: Назва + Опис */
+.procedure-info {
     flex: 1;
 }
 
-.mainName {
+.procedure-title {
     font-size: 15px;
     line-height: 1.4;
     color: var(--primary-text-color);
 }
 
-.span {
+.accent-pipe {
     color: var(--accent-color);
-    padding-left: 5px;
+    margin-left: 4px;
 }
 
-.secondText {
+.procedure-description {
     font-size: 11px;
     color: #BFBBB2;
     margin-top: 4px;
+    line-height: 1.4;
 }
 
-/* Блок цін */
-.price-block {
+/* Права частина: Ціни */
+.price-details {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    min-width: 140px; /* Фіксована ширина правої колонки */
-}
-
-/* Спеціальний відступ для одиночних цін, щоб вони були внизу відносно назви, як на макеті */
-.single-price {
-    justify-content: flex-end;
-    align-self: stretch;
-    padding-bottom: 5px;
+    gap: 6px; 
+    min-width: 140px; /* Тримає колонку цін рівною */
 }
 
 .price-row {
@@ -77,30 +83,28 @@
     align-items: center;
 }
 
-/* Якщо ціна одна, вона притискається вправо */
+/* Вирівнювання для одиночних цін (без підпису "коротке/довге") */
 .single-price .price-row {
     justify-content: flex-end;
 }
 
-.size-label {
+.label {
     font-size: 11px;
     color: #BFBBB2;
 }
 
-.price-value {
+.price {
     font-size: 14px;
     font-weight: 600;
-    color: var(--primary-text-color);
+    color: var(--price-color);
     white-space: nowrap;
 }
 
 
 
-/* Пунктирна лінія */
-.separator-line {
-    border: none;
-    border-top: 1px dashed var(--accent-color);
-    opacity: 0.5;
-    margin: 10px 0;
-    width: 100%;
+/* Розділювальні лінії-зображення */
+.separator {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
 }
