@@ -1,26 +1,35 @@
-.liColorHair{
+:root{
+    --accent-color: #DA730D;
+    --primary-text-color: #F2E7D3;
+      --background-color:#1A0606;
+    
+}
+
+.liColorHair {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* На всю доступну ширину */
+    padding: 12px 0;
+    border-bottom: 0.5px solid rgba(218, 115, 13, 0.3); /* Тонка лінія */
 }
 
 .hairsection{
      display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     flex-direction: column;
+    width: 100%;
+    max-width: 450px
 }
-.section2{
+/* .section2{
      display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center; 
     min-height: 100vh; 
-     /* Секція займає весь екран  */
-     /* padding: 20px;  */
+    
      box-sizing: border-box; 
     position: relative; 
-}
+} */
 
 
 .head2{
@@ -34,18 +43,23 @@
 }
 
 .text{
-    width: 190px;
-    height: 75px;
+    width: auto; 
+    height: auto;
+    flex: 1;
+    padding-right: 10px;
 }
 
 .mainName{
-       font-size: 15px;
+    font-size: 15px;
+    line-height: 1.4; 
+    display: block; 
 }
 
 .secondText{
-     font-size: 10px;
-     margin-top: 5px;
-     color:  #BFBBB2;
+    font-size: 11px; 
+    line-height: 1.6; 
+    margin-top: 5px;
+    color: #BFBBB2;
 }
 
 .size{
@@ -56,19 +70,23 @@
     margin-right: 10px;
 }
 
-.price{
-    font-size: 15px;
+.price {
+    text-align: right;
+    font-weight: 600;
+    color: var(--accent-color); 
 }
 
-.number{
-    /* font-size: 16px; */
-     /* font-family: "lato", sans-serif; */
+/* .number{
+    font-size: 16px;
+    font-family: "lato", sans-serif; 
    font-weight: 600;
-}
+} */
 
-.sircle{
-    margin-left:270px;
-    margin-top: -120px;
+.sircle {
+    position: absolute;
+    right: -20px;
+    top: 10%;
+    z-index: -1;
 }
 .twoSircle{
     height: 160px;
