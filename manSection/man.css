@@ -41,11 +41,12 @@
 
 .manUl2 {
     text-align: right;
-    color: var(--accent-color); /* Використовуємо твій акцентний колір */
+    
 }
 
 .priceSpan {
     font-weight: 700;
+    color: #BFBBB2;
 }
 
 /* Декор через абсолютне позиціонування (замість великих марджинів) */
